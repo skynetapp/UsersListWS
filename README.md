@@ -22,7 +22,7 @@ Views | UsersViewForm
 - Function **UsersListFlow** will be executed first from index.php -> controller.
 - Function **getUsersList** will be called from controller to action.
 - Function **setWSDLHandle** will get the ws client connection from UsersWS.php and will get the login session id.
-- Function **getUsersListArray** from action will get the parameters by ws call **get_entry_list** and returns the users result.
+- Function **getUsersListArray** will be called in action from UsersWS.php which will get the parameters by ws call **get_entry_list** and returns the users result.
 
 #### Step 2:
 
