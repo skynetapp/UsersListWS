@@ -50,7 +50,7 @@ $GLOBALS['root_path'] = 'C:/xampp/htdocs/lyteanalytics/branches/UsersListWS/';
 
 If any error found in running the url in local, then it might be the following reasons.
 
-- If the url call is not right, the output cannot will be blank page. It should be as below.
+- If the url call is not right, the output will be blank page. It should be as below.
 
 **_Url:_**
 	
