@@ -29,3 +29,26 @@ Views | UsersViewForm
 - The array result will be passed to function **showUsersList** from controller -> action.
 - Function **showUsersListView** will be called from action -> usersview.php which is included in UsersAction.php
 - The display tpl page will be called in UsersView.php which gives the output of users list. 
+
+#### Steps to Execute:
+
+- If we need to run the code in local system, the below changes need to be done in config.php
+
+ **_Code:_**
+	
+```
+ $GLOBALS['base_path'] = 'http://localhost/lyteanalytics/branches/UsersListWS';
+$GLOBALS['root_path'] = 'C:/xampp/htdocs/lyteanalytics/branches/UsersListWS/';
+```
+
+#### Assumptions
+
+#### Errors
+
+If any error found in running the url in local, then it might be the following reasons.
+
+- root path and base path might be wrong.
+- sugar username and password might not be correct.
+- sugar url path may be wrong.
+
+
