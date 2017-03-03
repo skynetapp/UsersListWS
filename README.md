@@ -41,6 +41,7 @@ Views | UsersViewForm
 $GLOBALS['root_path'] = 'C:/xampp/htdocs/lyteanalytics/branches/UsersListWS/';
 ```
 
+
 #### Assumptions
 
 - Not Applicable.
@@ -49,7 +50,14 @@ $GLOBALS['root_path'] = 'C:/xampp/htdocs/lyteanalytics/branches/UsersListWS/';
 
 If any error found in running the url in local, then it might be the following reasons.
 
-- root path and base path in config.php might be wrong. It should be same as above in steps to execute.
+- If the url call is not right, the output cannot will be blank page. It should be as below.
+
+**_Url:_**
+	
+```
+http://localhost/lyteanalytics/branches/UsersListWS/index.php?module=Users&action=UserList
+```
+- The root path and base path in config.php might be wrong. It should be same as above in steps to execute.
 - sugar username and password might not be correct in Global -> UsersListWSConnection.php.
 - sugar url path may be wrong in Global -> UsersListWSConnection.php.
 - If we are not getting the output, then ws call need to be checked. it should be as **get_entry_list**.
