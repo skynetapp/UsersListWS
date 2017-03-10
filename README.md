@@ -15,7 +15,7 @@ Views | UsersViewForm
 
 - Upon running the url, we will be getting the users list information.
 - First we will get the login session id and will set the ws client connection.
-- Next we will get the users list array by passing parameters to ws call ** get_entry_list**.
+- Next we will get the users list array by passing parameters to ws call **get_entry_list**.
 - The array list we will be showing the output in a table.
 
 
