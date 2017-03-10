@@ -11,6 +11,14 @@ Lib | Smarty,nusoap
 Modules | UsersController, UsersAction, UsersView, UsersWS
 Views | UsersViewForm
 
+#### Architecture
+
+- Upon running the url, we will be getting the users list information.
+- First we will get the login session id and will set the ws client connection.
+- Next we will get the users list array by passing parameters to ws call ** get_entry_list**.
+- The array list we will be showing the output in a table.
+
+
 #### Main Flow
 
 - To get the list: index.php -> controller -> action -> UsersWS
@@ -32,13 +40,13 @@ Views | UsersViewForm
 
 #### Steps to Execute:
 
-- If we need to run the code in local system, the below changes need to be done in config.php
+- If we need to run the code , the below changes need to be done in config.php
 
  **_Code:_**
 	
 ```
- $GLOBALS['base_path'] = 'http://localhost/lyteanalytics/branches/UsersListWS';
-$GLOBALS['root_path'] = 'C:/xampp/htdocs/lyteanalytics/branches/UsersListWS/';
+$GLOBALS['base_path'] = 'http://159.203.239.91/UsersListWS';
+$GLOBALS['root_path'] = '/var/www/html/UsersListWS/';
 ```
 
 
@@ -48,14 +56,14 @@ $GLOBALS['root_path'] = 'C:/xampp/htdocs/lyteanalytics/branches/UsersListWS/';
 
 #### Errors
 
-If any error found in running the url in local, then it might be the following reasons.
+If any error found , then it might be the following reasons.
 
 - If the url call is not right, the output will be blank page. It should be as below.
 
 **_Url:_**
 	
 ```
-http://localhost/lyteanalytics/branches/UsersListWS/index.php?module=Users&action=UserList
+http://159.203.239.91/UsersListWS/index.php?module=Users&action=UserList
 ```
 - The root path and base path in config.php might be wrong. It should be same as above in steps to execute.
 - sugar username and password might not be correct in Global -> UsersListWSConnection.php.
